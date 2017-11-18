@@ -1,0 +1,250 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+    <!--navbar style-->
+<style>
+    body{
+background:url(jpg/6.jpg)no-repeat;
+width:100%;height:100%;
+background-size:cover;
+}
+* {
+	margin:0;
+	padding:0;
+}
+ul {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+.nav {
+	width:100%;
+	height:40px;
+	background:#e3e4e5;
+	border-bottom:1px solid #ddd;
+	/*position:absolute;
+	*/
+}
+.navList {
+	float:right;
+}
+.navList li {
+	float:left;
+	font-size:0;
+	height:40px;
+	/*line-height:40px;
+	*/
+			position:relative;
+	/*top:1px;
+	*/
+}
+.navList li:last-child {
+	border:none;
+}
+.navList li a {
+	font-size:14px;
+	display:inline-block;
+	line-height:14px;
+	padding:0 10px;
+	margin:13px 0;
+}
+/*.listMenu {
+	padding:0 12px;
+}
+*/
+		/*京东解决方案是用li表示竖分割线*/
+		
+		.spacer {
+	height:12px;
+	width:1px;
+	background:#ccc;
+}
+.icon-zhankai-copy {
+	font-size:12px;
+	padding-left:6px;
+}
+.zhuce {
+	width:200px;
+	height:auto;
+	background:white;
+	border:1px solid #ccc;
+	border-top:none;
+	position:absolute;
+	top:40px;
+	left:-1px;
+	z-index:10;
+	font-size:12px;
+	display:none;
+}
+</style>
+    <!--body style-->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<style>
+.tabs {
+	width:1000px;
+	margin:80px;
+	height:336px;
+	overflow:hidden;
+}
+.tabs_item {
+	height:36px;
+}
+.tabs_block {
+	height:300px;
+}
+.list_item {
+	float:left;
+	width:200px;
+	height:36px;
+	line-height:36px;
+	font-size:26px;
+	text-align:center;
+	/*background-color:whitesmoke;*/
+	cursor:pointer;
+}
+.list_item.active {
+	color:#FFF;
+	background-color:lightgray;
+}
+.tabs_block {
+	width:20000px;
+	position:relative;
+}
+.list_block {
+	display:none;
+	float:left;
+	width:1200px;
+	height:300px;
+	font-size:20px;
+	text-align:center;
+	line-height:300px;
+	/*background-color:#F4F4F4*/
+}
+.list_block.show {
+	display:block;
+}
+</style>
+
+</head>
+<body>
+
+    <!--navbar-->
+<div class="nav">
+    <ul class="navList">
+        <li class="listMenu">
+            <a href="register.html">免费注册 <i class="iconfont icon-zhankai-copy"></i> </a>
+        </li>
+        <!-- <li class="spacer"></li> -->
+        <li class="listMenu">
+            <a href="#">我的订单<i class="iconfont icon-zhankai-copy"></i></a>
+            <div class="zhuce">
+                <p>正在努力开发中</p>
+            </div>
+        </li>
+        <!-- <li class="spacer"></li> -->
+        <li class="listMenu">
+            <a href="#">我的京东<i class="iconfont icon-zhankai-copy"></i></a>
+            <div class="zhuce">
+                 <p>正在努力开发中</p>
+                 <p>正在努力开发中</p>
+                 <p>正在努力开发中</p>
+            </div>
+        </li>
+        <!-- <li class="spacer"></li> -->
+        <li class="listMenu">
+            <a href="#">客户服务<i class="iconfont icon-zhankai-copy"></i></a>
+            <div class="zhuce">
+                 <p>正在努力开发中</p>
+                 <p>正在努力开发中</p>
+                <p>正在努力开发中</p>
+                <p>正在努力开发中</p>
+                 <p>正在努力开发中</p>
+            </div>
+        </li>
+        <!-- <li></li> -->
+    </ul>
+</div>
+
+<script>
+    $('.listMenu').mousemove(function (e) {
+        $(this).css({
+            'background': 'white',
+            "border-right": "1px solid #ccc",
+            "border-left": "1px solid #ccc",
+            "top": "1px"
+        });
+        $(this).children('.zhuce').css('display', 'block');
+    });
+    $(".listMenu").mouseout(function () {
+        $(this).children('.zhuce').css('display', 'none');
+        $('.listMenu').css({
+            'background': '#e3e4e5',
+            "top": "0"
+        });
+        $('.listMenu').css('border', 'none');
+    });
+</script>
+    <!--body-->
+    <div class="tabs">
+    <div class="tabs_item">
+        <div class="list_item">JAVA</div>
+        <div class="list_item">DreamWeaver</div>
+        <div class="list_item">HBuilder</div>
+        <div class="list_item">Linux</div>
+         <div class="list_item">Asp.net</div>
+
+    </div>
+    <div class="clear"> </div>
+    <div class="tabs_block">
+        <div class="list_block">链接：http://pan.baidu.com/s/1gfMq0AR 密码：z06c</div>
+        <div class="list_block">链接：http://pan.baidu.com/s/1gfMWx6F 密码：klrf</div>
+        <div class="list_block">链接：http://pan.baidu.com/s/1kVrGfS7 密码：8gwd</div>
+        <div class="list_block">链接：http://pan.baidu.com/s/1mivHM0S 密码：83dv</div>
+        <div class="list_block">链接：http://pan.baidu.com/s/1dFhIXtJ 密码：nk1o</div>
+    </div>
+</div>
+
+<script>
+    jQuery.easing['easeOutCubic'] = function (x, t, b, c, d) {
+        return c * ((t = t / d - 1) * t * t + 1) + b;
+    };
+
+    function Tabs(tabs, list, block, item, $) {
+        var tabs = $(tabs);
+        var width = tabs.width();
+        tabs.find(list + ':first').addClass('active');
+        tabs.find(item + ':first').addClass('show');
+        tabs.find(list).click(function () {
+            var $this = $(this);
+            var i = tabs.find(block).find('.show').index();
+            var n = $this.index();
+            $this.addClass('active').siblings('.active').removeClass('active');
+            tabs.find(item).eq(n).addClass('show');
+            if (n > i) {
+                tabs.find(block).stop().animate({
+                    'left': '-' + width + 'px'
+                }, 600, 'easeOutCubic', function () {
+                    tabs.find(block).css('left', '0px');
+                    tabs.find(item).eq(n).siblings('.show').removeClass('show');
+                });
+            } else {
+                tabs.find(block).css('left', '-' + width + 'px').stop().animate({
+                    'left': 0
+                }, 600, 'easeOutCubic', function () {
+                    tabs.find(item).eq(n).siblings('.show').removeClass('show');
+                });
+            }
+        });
+    };
+    jQuery(document).ready(function () {
+        var myTabs = new Tabs('.tabs', '.list_item', '.tabs_block', '.list_block', jQuery);
+    });
+</script>
+</body>
+</html>
